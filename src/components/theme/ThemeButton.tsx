@@ -24,10 +24,11 @@ const IconFromTheme = ({ theme }: { theme: Theme }) => {
     }
 };
 
-const ThemeButton = () => {
+const ThemeButton = ({ className }: {className?: string}) => {
     const [theme, setTheme] = useTheme();
     return (
         <Button
+            className={className}
             onClick={() => setTheme((theme) => getNextTheme(theme))}
             variant="outline"
             size="icon"
