@@ -7,10 +7,10 @@ import {
     useState,
 } from "react";
 
-const DARK_CLASS = "dark";
-const LIGHT_CLASS = "light";
-const OS = "os";
-const PREFER_DARK_QUERY = "(prefers-color-scheme: dark)";
+export const OS = "os";
+export const DARK_CLASS = "dark";
+export const LIGHT_CLASS = "light";
+export const PREFER_DARK_QUERY = "(prefers-color-scheme: dark)";
 
 export type Theme = typeof DARK_CLASS | typeof LIGHT_CLASS | typeof OS;
 
